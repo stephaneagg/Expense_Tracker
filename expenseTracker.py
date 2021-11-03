@@ -30,14 +30,18 @@ def interface():
         user = input("\nWhat would you like to do? \nValid inputs are: add expense, list expenses, help, quit \n- ")
         if user == "add expense":
             add()
+            continue
         if user == "list expenses":
             user = input("Would you like to see a table of all expenses? (yes/no) - ")
             if user == "yes":
                 toString()
+                continue
             if user == "no":
                 print(expense())
+                continue
         if user == "help":
             help()
+            continue
         if user == "quit":
             return
         else:
